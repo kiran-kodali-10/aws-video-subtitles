@@ -14,12 +14,13 @@
     "aws-amplify": "^3.0.19",
     "axios": "^0.18.1",
     "core-js": "^3.6.5",
+    "cors": "^2.8.5",
     "quasar": "^1.0.0"
   },
   "devDependencies": {
     "@quasar/app": "^2.0.0",
-    "babel-eslint": "^10.0.1",
     "@quasar/quasar-app-extension-dotenv": "^1.0.5",
+    "babel-eslint": "^10.0.1",
     "eslint": "^6.8.0",
     "eslint-config-standard": "^14.1.0",
     "eslint-loader": "^3.0.3",

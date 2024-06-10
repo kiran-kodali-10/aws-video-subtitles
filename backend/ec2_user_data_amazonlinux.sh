@@ -2,8 +2,8 @@
 
 sudo yum update -y
 sudo yum install git -y
-git clone https://github.com/flych3r/cloud-computing-video-subtitles.git
-cd cloud-computing-video-subtitles/backend
+git clone https://github.com/kiran-kodali-10/aws-video-subtitles.git
+cd /aws-video-subtitles/backend
 sudo yum install python3 -y
 sudo python3 -m pip install -r requirements.txt
 export FLASK_HOST=0.0.0.0
