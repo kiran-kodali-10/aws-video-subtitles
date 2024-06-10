@@ -30,7 +30,7 @@ def upload_file(user_id, file_name, file_video, bucket, prefix=None):
     ).hexdigest()
     bucket_filename = '{}/{}.mp4'.format(prefix, file_id)
 
-    s3_client = boto3.client('s3', region_name='us-east-1')
+    s3_client = boto3.client('s3', region_name='us-west-1')
     try:
         s3_client.upload_fileobj(file_video, bucket, bucket_filename)
         return file_id

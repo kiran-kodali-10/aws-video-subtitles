@@ -46,7 +46,7 @@ module.exports = function (/* ctx */) {
     build: {
       vueRouterMode: 'hash', // available values: 'hash', 'history'
       env: {
-        COGNITO_REGION: process.env.COGNITO_REGION || 'us-east-1',
+        COGNITO_REGION: process.env.COGNITO_REGION || 'us-west-1',
         COGNITO_USER_POOL_ID: process.env.COGNITO_USER_POOL_ID,
         COGNITO_WEB_CLIENT_ID: process.env.COGNITO_WEB_CLIENT_ID,
         COGNITO_POOL_DOMAIN: process.env.COGNITO_POOL_DOMAIN,
