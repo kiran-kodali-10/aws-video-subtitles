@@ -13,7 +13,7 @@ class VideoSubtitle( object ):
 
     def __annotate( self, clip, txt_pt, txt_en ):
 
-        font_size = clip.h * 0.05
+        font_size = clip.h * 0.5
 
         num_words_pt = len( txt_pt.split() )
         self.translation_words += num_words_pt
@@ -42,7 +42,7 @@ class VideoSubtitle( object ):
         txt_clip_pt = TextClip( txt_pt, font='Amiri-Bold', fontsize=font_size, color='white')
         txt_clip_en = TextClip( txt_en, font='Amiri-Bold', fontsize=font_size, color='white')
 
-        txt_clip_pt = txt_clip_pt.on_color(color=(20,85,33), col_opacity=0.8).set_pos( ("center", clip.h - mult*(font_size + 2)) )
+        txt_clip_pt = txt_clip_pt.on_color(color=(20,85,33), col_opacity=1.0).set_pos( ("center", clip.h - mult*(font_size + 2)) )
         txt_clip_en = txt_clip_en.on_color(color=(0,0,0), col_opacity=0.8).set_pos( ("center", clip.h - (mult*0.5)*(font_size) ) ) 
 
         annotated_clip = CompositeVideoClip( [clip, txt_clip_pt, txt_clip_en] )
